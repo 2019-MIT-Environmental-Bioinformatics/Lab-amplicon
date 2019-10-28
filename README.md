@@ -7,6 +7,7 @@
 
 ## Install qiime2
 *if you use this tutorial to install qiime2 after November 2019, check the qiime2 webpage for the [latest qiime 2 version][2]*
+
 Login to poseidon and navigate to your Lab directory
 
 Get the yml file from the qiime2 webpage:
