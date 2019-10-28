@@ -1,1 +1,3 @@
-# Lab-amplicons
+# Today in class:
+1.
+2.
