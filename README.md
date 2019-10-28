@@ -19,6 +19,7 @@ and then use this file to create your conda envinment:
 ```conda env create -n qiime2-2019.7 --file qiime2-2019.7-py36-linux-conda.yml```
 
 Activate the conda environment you just created and test the installation by typing calling qiime and asking it to display the help menu:
+
 ```qiime --help```
 
 
