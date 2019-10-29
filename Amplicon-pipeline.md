@@ -66,3 +66,7 @@ In contrast to QIIME 2 artifacts, visualizations are terminal outputs of an anal
 
 Rest and best in your homework repo!
 :)
+
+  [1]: https://qiime2.org/
+  [2]: https://docs.qiime2.org/2019.7/install/native/
+  [3]: https://www.nature.com/articles/srep42242
