@@ -1,6 +1,6 @@
 # Today in class:
-1.
-2.
+1. Lecture on analysis of microbial communities
+2. Start qiime tutorial
 
 
 
