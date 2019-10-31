@@ -81,11 +81,8 @@ Use the command ```qiime dada2```
 and the help screen to fill in the command
 
 > Hint the beginning of the flag is indicative of what should be provided:
-
 >  **--i** sequences or table or ... (it is usually self-explanatory)
-
 >  **--p** parameter
-
 >  **--o** sequences or table or ... (it is usually self-explanatory)
 
  
