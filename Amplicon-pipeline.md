@@ -57,6 +57,11 @@ In contrast to QIIME 2 artifacts, visualizations are terminal outputs of an anal
 > *since we do not have visualization in poseidon you will have to download the files locally*
 
 
+For this exercise you will need to start an *srun* or submit and sbatch script
+Use 20G of memory and 24 nodes
+
+Remember that after you access the compute node you will need to activate your environment in order for qiime to run
+
 ### Import your demultiplexed sequences
 ```qiime tools import --type 'SampleData[PairedEndSequencesWithQuality]' --input-path arctic_manifest --output-path arctic_demux.qza --input-format PairedEndFastqManifestPhred33V2```
 
@@ -76,9 +81,26 @@ Use the command ```qiime dada2```
 and the help screen to fill in the command
 
 > Hint the beginning of the flag is indicative of what should be provided:
+
 >  **--i** sequences or table or ... (it is usually self-explanatory)
+
 >  **--p** parameter
+
 >  **--o** sequences or table or ... (it is usually self-explanatory)
+
+ 
+### Summarize filtered/denoised data 
+
+qiime feature-table summarize 
+qiime feature-table tabulate-seq
+qiime metadata tabulate
+
+## Assign taxonomy
+### using Blast
+
+### The first time you use qiime you need to "format the database" qiime tools import
+#### the files you need are in ```/vortexfs1/omics/env-bio/collaboration/common-materials/```
+
 
 Rest and best in your homework repo!
 :)
