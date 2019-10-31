@@ -95,9 +95,33 @@ qiime metadata tabulate
 ## Assign taxonomy
 ### using Blast
 
-### The first time you use qiime you need to "format the database" qiime tools import
-#### the files you need are in ```/vortexfs1/omics/env-bio/collaboration/common-materials/```
+### The first time you use qiime you need to "format the database" using qiime tools import
+The entire Silva132 database is inside the folder ```/vortexfs1/omics/env-bio/collaboration/common-materials/databases```
 
+I have created the qiime-formatted files you need inside qiime_form folder. I used the "silva132_99.fna" set (which contains all 16S and 18S sequences clustered at 99% identity; clustering the sequences in the database is used by the developers in order to reduce the size of the databae).
+
+Inside the folder you will find a file that contains the representative sequences and another one that contains the taxonomy annotation of each sequence. Use thise files and the ```qiime feature-classifier classify-consensus-blast ``` command to assign taxonomy to the **representative** sequences (do not move the database files provide the *absolute* path.
+
+### Visualize classified sequences
+`
+``qiime metadata tabulate```
+
+```qiime taxa barplot```
+
+### Make a tree
+#### Align the representative sequences
+```qiime alignment mafft```
+
+### Mask the alignment
+```qiime alignment mask```
+
+### Contruct phylogeny using fasttree
+```qiime phylogeny fasttree```
+
+### Root the tree
+```qiime phylogeny midpoint-root```
+
+##Calculate diversity metrics##
 
 Rest and best in your homework repo!
 :)
