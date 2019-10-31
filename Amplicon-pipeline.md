@@ -81,8 +81,11 @@ Use the command ```qiime dada2```
 and the help screen to fill in the command
 
 > Hint the beginning of the flag is indicative of what should be provided:
+>
 >  **--i** sequences or table or ... (it is usually self-explanatory)
+>
 >  **--p** parameter
+>
 >  **--o** sequences or table or ... (it is usually self-explanatory)
 
  
@@ -103,8 +106,7 @@ I have created the qiime-formatted files you need inside qiime_form folder. I us
 Inside the folder you will find a file that contains the representative sequences and another one that contains the taxonomy annotation of each sequence. Use thise files and the ```qiime feature-classifier classify-consensus-blast ``` command to assign taxonomy to the **representative** sequences (do not move the database files provide the *absolute* path.
 
 ### Visualize classified sequences
-`
-``qiime metadata tabulate```
+```qiime metadata tabulate```
 
 ```qiime taxa barplot```
 
