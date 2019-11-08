@@ -91,9 +91,9 @@ and the help screen to fill in the command
  
 ### Summarize filtered/denoised data 
 
-qiime feature-table summarize 
-qiime feature-table tabulate-seq
-qiime metadata tabulate
+```qiime feature-table summarize``` 
+```qiime feature-table tabulate-seq```
+```qiime metadata tabulate```
 
 ## Assign taxonomy
 ### using Blast
